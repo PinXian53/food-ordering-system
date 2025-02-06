@@ -6,20 +6,20 @@
 
 ##### start 
 ```shell
-docker-compose -f common.yml -f kafka_cluster.yml -f postgres.yml -p food-ordering-system up -d
+docker compose -f common.yml -f kafka_cluster.yml -f postgres.yml -p food-ordering-system up -d
 ```
 
 ##### show
 ```shell
-docker-compose -f common.yml -f kafka_cluster.yml -f postgres.yml -p food-ordering-system ps
+docker compose -f common.yml -f kafka_cluster.yml -f postgres.yml -p food-ordering-system ps
 ```
 
 ##### stop
 ```shell
-docker-compose -f common.yml -f kafka_cluster.yml -f postgres.yml -p food-ordering-system down
+docker compose -f common.yml -f kafka_cluster.yml -f postgres.yml -p food-ordering-system down
 ```
 
 ##### stop and delete volume
 ```shell
-docker-compose -f common.yml -f kafka_cluster.yml -f postgres.yml -p food-ordering-system down -v
+docker compose -f common.yml -f kafka_cluster.yml -f postgres.yml -p food-ordering-system down -v
 ```
